@@ -1,0 +1,16 @@
+/* Base */
+ html { 
+     font-size: 10px; 
+    } 
+
+/* Home page */
+.Home__logo {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.Home__logo-sncf {
+    display: block;
+    margin: auto;
+    height: 9rem;
+}
