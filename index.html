@@ -20,18 +20,112 @@
     <link rel="apple-touch-icon" href="icon.png" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css" />
 
-    <meta name="theme-color" content="#fafafa" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="theme-color" content="#faf7f9" />
   </head>
 
   <body>
-    <figure class="Home__logo">
-      <img class="Home__logo-sncf" src="img/logo-sncf.png" />
+    <!-- Logo Sncf Haut de page -->
+    <figure class="home__logo">
+      <img class="home__logo-sncf" src="img/logo-sncf.png" />
     </figure>
+
+    <main>
+      <section class="home__form-container">
+        <h1 class="home__form-title">
+          Veuillez vous connecter afin de vous inscrire au live
+        </h1>
+        <!-- Formulaire inscription live -->
+        <form
+          name="homeForm"
+          action="./live-sncf.html"
+          method="post"
+          class="home__form"
+        >
+          <!-- Ici action= renvoie (normalement) vers la page du live -->
+          <div>
+            <label for="Nom">
+              Nom
+              <span class="asterisque">*</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              pattern="[Aa-Zz]"
+              name="Nom"
+              placeholder="Nom"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="Prenom">
+              Prénom
+            </label>
+            <input
+              type="text"
+              id="FirstName"
+              pattern="[Aa-Zz]"
+              name="Prénom"
+              placeholder="Prénom"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="Email">
+              Adresse mail
+              <span class="asterisque">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="Email"
+              placeholder="exemple@email.fr"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="Téléphone">Téléphone</label>
+            <input
+              type="tel"
+              id="phone"
+              minlength="10"
+              maxlength="10"
+              pattern="[0-9]{10}"
+              name="Téléphone"
+              placeholder="0123456789"
+            />
+          </div>
+          <br />
+          <div class="home__button-container">
+            <input
+              class="home__button"
+              type="submit"
+              value="Accéder au live"
+              name="Envoyer"
+            />
+            <!-- <input type="reset" value="Rénit" name="Reset" /> -->
+          </div>
+        </form>
+        <p class="home__obligatoire">
+          <span class="asterisque">*</span>
+          Obligatoire
+        </p>
+      </section>
+    </main>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
