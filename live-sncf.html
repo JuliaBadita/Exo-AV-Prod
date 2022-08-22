@@ -25,23 +25,118 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css" />
 
-    <meta name="theme-color" content="#fafafa" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="theme-color" content="#faf7f9" />
   </head>
 
   <body>
-    <figure>
-      <img class="live__logo-sncf" src="img/logo-sncf.png" />
-    </figure>
+    <main>
+      <!-- Logo SNCF -->
+      <figure class="live__logo-figure">
+        <img class="live__logo-sncf" src="img/logo-sncf.png" />
+      </figure>
 
-    <!-- Placeholder de l'évènement digital -->
-    <iframe
-      width="866"
-      height="487"
-      src="https://www.youtube.com/embed/KKsaJqzId4A?autoplay=1"
-      title="A la découverte des métiers SNCF avec Camille Lorente"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
+      <section class="live__flex-container">
+        <!-- Placeholder de l'évènement digital -->
+        <iframe
+          class="live__placeholder"
+          src="https://www.youtube.com/embed/KKsaJqzId4A?autoplay=1"
+          title="A la découverte des métiers SNCF avec Camille Lorente"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+
+        <section class="live__flex-container2">
+          <!-- Module de questions -->
+          <div class="live__questions">
+            <h2 class="live__title">Vos questions</h2>
+            <div class="live__questions-placeholder">
+              <span class="live__questions-username">John Doe:</span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            </div>
+            <article class="live__responsive-questions">
+              <div class="live__questions-placeholder">
+                <span class="live__questions-username">Steve Liv:</span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                consectetur molestiae similique?
+              </div>
+            </article>
+            <div class="live__questions-text-container">
+              <textarea
+                type="text"
+                class="live__questions-text"
+                placeholder="Commenter..."
+              ></textarea>
+            </div>
+          </div>
+          <!-- 
+          <div class="live__questions-responsive">
+            <h2 class="live__title">Vos questions</h2>
+            <div class="live__questions-placeholder">
+              <span class="live__questions-username">John Doe:</span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            </div>
+            <article class="live__responsive-questions">
+              <div class="live__questions-placeholder">
+                <span class="live__questions-username">Steve Liv:</span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                consectetur molestiae perspiciatis voluptatum maxime similique?
+              </div>
+            </article>
+            <div class="live__questions-text-container">
+              <textarea
+                type="text"
+                class="live__questions-text"
+                placeholder="Écrire un commentaire..."
+              ></textarea>
+            </div>
+          </div> -->
+
+          <!-- Module de chat -->
+          <div class="live__chat">
+            <h2 class="live__title">Vos commentaires</h2>
+            <div class="live__chat-placeholder">
+              <span class="live__chat-username">Doe Tommy:</span>
+              Lorem ipsum dolor adipisicing elit. Officia nesciunt tenetur quas
+              quod deleniti voluptate.
+            </div>
+            <article class="live__responsive-chat">
+              <div class="live__chat-placeholder">
+                <span class="live__chat-username">Clair Frank:</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                corporis quod obcaecati.
+              </div>
+              <div class="live__chat-placeholder">
+                <span class="live__chat-username">Sam Nash:</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni.
+              </div>
+            </article>
+            <div class="live__chat-text-container">
+              <textarea
+                type="text"
+                class="live__chat-text"
+                placeholder="Commenter..."
+              ></textarea>
+            </div>
+          </div>
+          <!-- <a href="" class="live__button">
+              <input
+                  type="submit"
+                  value=">"
+                  placeholder="Ecrire votre commentaire..;"
+                  />
+                </a> -->
+          <!-- </div> -->
+        </section>
+      </section>
+    </main>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>

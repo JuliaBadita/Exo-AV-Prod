@@ -18,7 +18,7 @@
 # Allow cross-origin requests.
 #
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
-# https://enable-cors.org/
+# https://enable-cors.org
 # https://www.w3.org/TR/cors/
 
 # (!) Do not use this without understanding the consequences.

@@ -24,6 +24,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- <link href="php/index.php" /> -->
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,8 +38,9 @@
   </head>
 
   <body>
+    <!-- <?php include 'results.php'; ?> -->
     <!-- Logo Sncf Haut de page -->
-    <figure class="home__logo">
+    <figure class="home__logo-figure">
       <img class="home__logo-sncf" src="img/logo-sncf.png" />
     </figure>
 
@@ -48,12 +50,7 @@
           Veuillez vous connecter afin de vous inscrire au live
         </h1>
         <!-- Formulaire inscription live -->
-        <form
-          name="homeForm"
-          action="./live-sncf.html"
-          method="post"
-          class="home__form"
-        >
+        <form name="homeForm" action="live-sncf.html" class="home__form">
           <!-- Ici action= renvoie (normalement) vers la page du live -->
           <div>
             <label for="Nom">
@@ -63,8 +60,8 @@
             <input
               type="text"
               id="name"
-              pattern="[Aa-Zz]"
-              name="Nom"
+              pattern="[a-zA-Z]{2,}"
+              name="nom"
               placeholder="Nom"
               required
             />
@@ -77,8 +74,9 @@
             <input
               type="text"
               id="FirstName"
-              pattern="[Aa-Zz]"
-              name="Prénom"
+              pattern="[a-zA-Z]{2,}"
+              maxlength="30"
+              name="prenom"
               placeholder="Prénom"
             />
           </div>
@@ -91,7 +89,7 @@
             <input
               type="email"
               id="email"
-              name="Email"
+              name="email"
               placeholder="exemple@email.fr"
               required
             />
@@ -105,7 +103,7 @@
               minlength="10"
               maxlength="10"
               pattern="[0-9]{10}"
-              name="Téléphone"
+              name="telephone"
               placeholder="0123456789"
             />
           </div>
